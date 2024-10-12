@@ -51,6 +51,11 @@ const Menu: FC = () => {
                     title: 'Configuración',
                     path: 'configuracion',
                 },
+                {
+                    type: 'page',
+                    title: 'Listas de reproducción',
+                    path: 'playlist',
+                },
             ],
         },
     ]

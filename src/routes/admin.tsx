@@ -2,10 +2,10 @@ import { RouteObject } from 'react-router-dom'
 import AdminLayout from '../layout/admin'
 import PagesLayout from '../layout/pages'
 import { DashboardPage } from '../views/pages/admin'
-import { UsersAll } from '../views/pages/admin/users'
+import { BASE, DASHBOARD, USERS, MUSIC_CONFIG, MUSIC_PLAYLIST } from '../utils/constants'
 
-import { BASE, DASHBOARD, MUSIC_CONFIG, USERS } from '../utils/constants'
-import { MusicConfig } from '../views/pages/admin/music'
+import { UsersAll } from '../views/pages/admin/users'
+import { MusicConfig, MusicPlaylist } from '../views/pages/admin/music'
 
 const routesAdmin: RouteObject = {
     path: BASE,
@@ -22,6 +22,10 @@ const routesAdmin: RouteObject = {
                 {
                     path: MUSIC_CONFIG,
                     element: <MusicConfig />,
+                },
+                {
+                    path: MUSIC_PLAYLIST,
+                    element: <MusicPlaylist />,
                 },
             ],
         },

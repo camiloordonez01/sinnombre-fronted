@@ -1,3 +1,4 @@
 import MusicConfig from './config'
+import MusicPlaylist from './playlist'
 
-export { MusicConfig }
+export { MusicConfig, MusicPlaylist }
